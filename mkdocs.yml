@@ -1,1 +1,44 @@
+# Project Information
 site_name: QingNiu WSP Server
+site_url: https://YolandaQingniu.github.io/qn_wsp_server_doc_english
+site_author: 伊欧乐科技有限公司
+site_description: 伊欧乐轻牛WSP服务器接入文档
+
+# Repository
+repo_name: QingNiu WSP Server Guide(English)
+repo_url: https://YolandaQingniu.github.io/qn_wsp_server_doc_english
+
+# Copyright
+copyright: "Copyright &copy; 伊欧乐科技有限公司"
+
+# Configuration
+theme:
+  name: material
+  language: en
+
+  palette:
+    primary: cyan
+
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+
+nav:
+  - "Introduction": "index.md"
+  - "Flow": "flow.md"
+  - "Docker Server":
+    - "Deploy": "docker/deploy_docker_server.md"
+    - "API": "docker/api.md"
+    - "Changelog": "docker/changelog.md"
+  - "Third Server":
+    - "Deploy": "third_server/deploy_third_server.md"
+    - "Request from Docker": "third_server/request_by_docker.md"
+    - "Request from APP": "third_server/request_by_app.md"
