@@ -1,1 +1,1 @@
-[Flow](./server-wsp-flow-chart.pdf)
+[Flow diagram](./assets/flow.svg)

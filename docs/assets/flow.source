@@ -1,0 +1,40 @@
+# https://mermaid-js.github.io/mermaid-live-editor/
+# Downloads SVG
+sequenceDiagram
+    User->>Scale: stand on scale
+    Scale->>Docker: 0x20
+    Docker->>Docker: decrypt, checksum, deserialize
+    Docker->>Third Server: request read scale users
+    Third Server->>Docker: response read scale users
+    Docker->>Yolanda Server: request read ota version
+    Yolanda Server->>Docker: response read ota version
+    Docker->>Docker: encrypt
+    Docker->>Scale: response result (0xA0) scale users and ota version
+
+    Scale->>Docker: 0x22
+    Docker->>Docker: decrypt, checksum, deserialize
+    Docker->>Third Server: request finish info sync
+    Third Server->>Docker: response finish info sync
+    Docker->>Docker: encrypt
+    Docker->>Scale: response result(0xA2)
+
+    User->>Scale: measure (difference is too large)
+    Scale->>Docker: 0x21
+    Docker->>Docker: decrypt, checksum, deserialize
+    Docker->>Third Server: request create unknown measurement
+    Third Server-->>APP: push notification about unknown measurement
+    Third Server->>Docker: response create unknown measurement
+    Docker->>Docker: encrypt
+    Docker->>Scale: response result(0xA1)
+
+    User->>Scale: measure (difference is less)
+    Scale->>Docker: 0x21
+    Docker->>Docker: decrypt, checksum, deserialize
+    Docker->>Third Server: request create measurement
+    Third Server-->>APP: push notification about measurement
+    Third Server->>Docker: response create measurement
+    Docker->>Docker: encrypt
+    Docker->>Scale: response result(0xA1)
+
+    APP->>Third Server: request data
+    Third Server->>APP: response data
