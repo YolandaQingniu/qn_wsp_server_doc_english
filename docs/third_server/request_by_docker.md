@@ -49,7 +49,7 @@ Body Params:
 |Name|Type|Required|Remark|Other|
 |--- |--- |--- |--- |--- |
 |mac|string|Yes|MAC|mock: 12:34:56:78:9A:BC|
-|battery_level|string|YES|Battery Level 0-Disabled 1-Low 2-Working 4-Full|mock: 1|
+|battery_level|integer|YES|Battery Level 0-Disabled 1-Low 2-Working 4-Full|mock: 1|
 
 Return Params:
 
