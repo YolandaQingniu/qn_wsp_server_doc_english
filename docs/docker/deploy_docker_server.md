@@ -5,7 +5,7 @@ Server SDK is a docker image. Developer need to understand Docker.
 ## Generate Dockerfile
 `vim Dockerfile`
 ```Dockerfile
-FROM registry.cn-shenzhen.aliyuncs.com/yolanda/wsp_open:v1.0.9
+FROM registry.cn-shenzhen.aliyuncs.com/yolanda/wsp_open:v1.0.10
 ```
 
 ## Configure Environment Variables
