@@ -40,6 +40,30 @@ Return Params:
 |├─ user_key|integer|Yes|User Key(1000-9999)|mock: 1234|
 |unit|integer|Yes|Unit 1 kg 2 lb 4 斤|mock: 1|
 
+#### (made to order) Read Bow Scale Users
+
+Endpoint: `POST /wsp/read_bow_scale_users`
+
+Body Params:
+
+|Name|Type|Required|Remark|Other|
+|--- |--- |--- |--- |--- |
+|mac|string|Yes|MAC|mock: 12:34:56:78:9A:BC|
+|battery_level|string|YES|Battery Level 0-Disabled 1-Low 2-Working 4-Full|mock: 1|
+
+Return Params:
+
+|Name|Type|Required|Remark|Other|
+|--- |--- |--- |--- |--- |
+|scale_users|object []|Yes|Scale Users(blank is [])|item type: object|
+|├─ user_index|integer|Yes|User Index(1-8)|mock: 2|
+|├─ gender|integer|Yes|Gender 0 female 1 male|mock: 1|
+|├─ height|number|Yes|Height(cm, keep a decimal fraction)|mock: 180.5|
+|├─ birthday|string|Yes|Birthday(YYYY-mm-dd format)|mock: 1990-01-01|
+|├─ user_key|integer|Yes|User Key(1000-9999)|mock: 1234|
+|unit|integer|Yes|Unit 1 kg 2 lb 4 斤|mock: 1|
+|ctrl|integer|Yes|1 means display, 0 means hidden # Bit0->username Bit1->BMI Bit2->bone Bit3->bodyfat Bit4->sinew Bit5->water Bit6->heart rate Bit7->weather Bit8->weight-trend|mock: 511|
+
 #### Read Ota Versions
 
 Endpoint: `POST /wsp/read_ota_versions`
