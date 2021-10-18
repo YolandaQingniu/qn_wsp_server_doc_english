@@ -11,12 +11,23 @@ FROM registry.cn-shenzhen.aliyuncs.com/yolanda/wsp_open:v1.0.10
 ## Configure Environment Variables
 `vim main.env`
 ```
-WSP_DOMAIN=http://wsp-demo.yolanda.hk         # [Required] Third Server URL
-AUTHORIZATION="Basic ZHVtbXk6MTIzNDU2Nzg="    # [Optional] Authorization header, default to nil
-CUSTOM_OTA_SERVER=http://wsp-demo.yolanda.hk  # [Optional] Custom OTA Server, default to Yolanda OTA Sever
-CUSTOM_ALGORITHM=01                           # [Optional] Custom Alogrithm, default to 01
-PORT=3000                                     # [Optional] Listen port, default to 3000
-TZ=Asia/Shanghai                              # [Optional] Timezone, default to Asia/Shanghai
+# [Required] Third Server URL
+WSP_DOMAIN=http://wsp-demo.yolanda.hk
+
+# [Optional] Authorization header, default to nil
+AUTHORIZATION="Basic ZHVtbXk6MTIzNDU2Nzg="
+
+# [Optional] Custom OTA Server, default to Yolanda OTA Sever
+CUSTOM_OTA_SERVER=http://wsp-demo.yolanda.hk
+
+# [Optional] Custom Alogrithm, default to 01
+CUSTOM_ALGORITHM=01
+
+# [Optional] Listen port, default to 3000
+PORT=3000
+
+# [Optional] Timezone, default to Asia/Shanghai
+TZ=Asia/Shanghai
 ```
 
 ## Run Docker Container
