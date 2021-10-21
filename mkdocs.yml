@@ -40,5 +40,6 @@ nav:
     - "Changelog": "docker/changelog.md"
   - "Third Server":
     - "Deploy": "third_server/deploy_third_server.md"
+    - "OTA": "third_server/ota.md"
     - "Request from Docker": "third_server/request_by_docker.md"
     - "Request from APP": "third_server/request_by_app.md"
