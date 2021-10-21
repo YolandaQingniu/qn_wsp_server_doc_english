@@ -23,6 +23,7 @@ Body Params
 |internal_model|string|Yes|Internal Model|mock: 029A|
 |hardware_model|string|Yes|Hardware Model|mock: 0001|
 |version|integer|Yes|Current Version|mock: 1|
+
 Return Params
 
 |Name|Type|Required|Remark|Other|
@@ -42,6 +43,7 @@ Body Params
 |internal_model|string|Yes|Internal Model|mock: 029A|
 |hardware_model|string|Yes|Hardware Model|mock: 0001|
 |version|integer|Yes|Current Version|mock: 1|
+
 Return Params
 
 |Name|Type|Required|Remark|Other|
