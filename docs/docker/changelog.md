@@ -1,6 +1,12 @@
 # Changelog
 
+### v1.0.12 (2022-01-14)
+
++ (made to order) Support control the display of indicator.
++ (made to order) Support control the display of bodyfat.
+
 ### v1.0.10 (2021-01-07)
+
 + (made to order) Support upload battery level.
 + (made to order) Support control the display of weight-trend.
 
