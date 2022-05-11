@@ -38,6 +38,8 @@ Return Params:
 |├─ height|number|Yes|Height(cm, keep a decimal fraction)|mock: 180.5|
 |├─ birthday|string|Yes|Birthday(YYYY-mm-dd format)|mock: 1990-01-01|
 |├─ user_key|integer|Yes|User Key(1000-9999)|mock: 1234|
+|├─ algorithm|integer|Yes|Algorithm|mock: 1|
+|├─ sport_flag|integer|Yes|Use Sport mode? use is 1, unused is 0.|mock: 1|
 |unit|integer|Yes|Unit 1 kg 2 lb 4 斤|mock: 1|
 
 #### (made to order) Read Bow Scale Users
