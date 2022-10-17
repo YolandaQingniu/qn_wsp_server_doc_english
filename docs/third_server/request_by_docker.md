@@ -192,3 +192,29 @@ Return Params:
 |Name|Type|Required|Remark|Other|
 |--- |--- |--- |--- |--- |
 |is_success|boolean|Yes|Is Success|mock: true|
+
+### 0x27
+
+#### Read Scale Users With Weight
+
+Endpoint: `POST /wsp/read_weight_scale_users`
+
+Body Params:
+
+|Name|Type|Required|Remark|Other|
+|--- |--- |--- |--- |--- |
+|mac|string|Yes|MAC|mock: 12:34:56:78:9A:BC|
+
+Return Params:
+
+|Name|Type|Required|Remark|Other|
+|--- |--- |--- |--- |--- |
+|scale_users|object []|Yes|Scale Users(blank is [])|item type: object|
+|├─ user_index|integer|Yes|User Index(1-8)|mock: 2|
+|├─ gender|integer|Yes|Gender 0 female 1 male|mock: 1|
+|├─ height|number|Yes|Height(cm, keep a decimal fraction)|mock: 180.5|
+|├─ weight|number|Yes|Weight(keep a decimal fraction)|mock: 67.5|
+|├─ weight_goal|number|Yes|Weight Goal(keep a decimal fraction)|mock: 65.0|
+|├─ birthday|string|Yes|Birthday(YYYY-mm-dd format)|mock: 1990-01-01|
+|├─ user_key|integer|Yes|User Key(1000-9999)|mock: 1234|
+|unit|integer|Yes|Unit 1 kg 2 lb 4 斤|mock: 1|
