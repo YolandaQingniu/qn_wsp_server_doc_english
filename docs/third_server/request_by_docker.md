@@ -88,6 +88,7 @@ Return Params:
 | ├─ birthday    | string    | Yes      | Birthday(YYYY-mm-dd format)                                  | mock: 1990-01-01  |
 | ├─ user_key    | integer   | Yes      | User Key(1000-9999)                                          | mock: 1234        |
 | ├─ ctrl        | integer   | Yes      | 1 means display, 0 means hidden # Bit0->bodyfat Bit1->indicator | mock: 255         |
+| ├─ sport_flag  |integer    | Yes      | Use Sport mode? use is 1, unused is 0.                       | mock: 1           |
 | unit           | integer   | Yes      | Unit 1 kg 2 lb 4 斤                                          | mock: 1           |
 
 #### Read Ota Versions
